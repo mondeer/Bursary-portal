@@ -155,11 +155,11 @@ return [
         /*
          * Application Service Providers...
          */
-        topclass\Providers\AppServiceProvider::class,
-        topclass\Providers\AuthServiceProvider::class,
-        // topclass\Providers\BroadcastServiceProvider::class,
-        topclass\Providers\EventServiceProvider::class,
-        topclass\Providers\RouteServiceProvider::class,
+        bursary\Providers\AppServiceProvider::class,
+        bursary\Providers\AuthServiceProvider::class,
+        // bursary\Providers\BroadcastServiceProvider::class,
+        bursary\Providers\EventServiceProvider::class,
+        bursary\Providers\RouteServiceProvider::class,
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
     ],

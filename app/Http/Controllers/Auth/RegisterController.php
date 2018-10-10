@@ -1,9 +1,9 @@
 <?php
 
-namespace topclass\Http\Controllers\Auth;
+namespace bursary\Http\Controllers\Auth;
 
-use topclass\User;
-use topclass\Http\Controllers\Controller;
+use bursary\User;
+use bursary\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \topclass\User
+     * @return \bursary\User
      */
     protected function create(array $data)
     {

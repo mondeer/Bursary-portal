@@ -1,6 +1,6 @@
 <?php
 
-namespace topclass\Exceptions;
+namespace bursary\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

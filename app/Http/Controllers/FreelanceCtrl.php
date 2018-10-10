@@ -1,9 +1,9 @@
 <?php
 
-namespace topclass\Http\Controllers;
+namespace bursary\Http\Controllers;
 
 use Illuminate\Http\Request;
-use topclass\Freelance;
+use bursary\Freelance;
 use Sentinel;
 
 class FreelanceCtrl extends Controller

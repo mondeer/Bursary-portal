@@ -1,6 +1,6 @@
 <?php
 
-namespace topclass\Http\Middleware;
+namespace bursary\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

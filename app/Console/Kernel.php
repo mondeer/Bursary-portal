@@ -1,6 +1,6 @@
 <?php
 
-namespace topclass\Console;
+namespace bursary\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

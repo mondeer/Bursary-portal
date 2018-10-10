@@ -1,6 +1,6 @@
 <?php
 
-namespace topclass;
+namespace bursary;
 
 use Illuminate\Database\Eloquent\Model;
 

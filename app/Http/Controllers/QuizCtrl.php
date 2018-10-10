@@ -1,11 +1,11 @@
 <?php
 
-namespace topclass\Http\Controllers;
+namespace bursary\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use topclass\Quiz;
-use topclass\Freelance;
+use bursary\Quiz;
+use bursary\Freelance;
 use Kagga\Telco\facades\Telco;
 use Mail;
 use Illuminate\Http\File;

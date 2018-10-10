@@ -1,9 +1,9 @@
 <?php
 
-namespace topclass\Http\Controllers;
+namespace bursary\Http\Controllers;
 
 use Illuminate\Http\Request;
-use topclass\Blog;
+use bursary\Blog;
 use Sentinel;
 
 class BlogCtrl extends Controller

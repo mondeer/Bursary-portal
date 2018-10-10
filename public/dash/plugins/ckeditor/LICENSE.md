@@ -1224,7 +1224,7 @@ Version 1.1
      or an entity chartered or registered to do business in the United
      States of America, any litigation relating to this License shall be
      subject to the jurisdiction of the Federal Courts of the Northern
-     District of California, with venue lying in Santa Clara topclass,
+     District of California, with venue lying in Santa Clara County,
      California, with the losing party responsible for costs, including
      without limitation, court costs and reasonable attorneys' fees and
      expenses. The application of the United Nations Convention on

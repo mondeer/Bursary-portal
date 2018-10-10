@@ -1,9 +1,9 @@
 <?php
 
-namespace topclass\Http\Controllers;
+namespace bursary\Http\Controllers;
 
 use Illuminate\Http\Request;
-use topclass\Subscribe;
+use bursary\Subscribe;
 
 class SubCtrl extends Controller
 {

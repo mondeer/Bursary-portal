@@ -1,6 +1,6 @@
 <?php
 
-namespace topclass\Mail;
+namespace bursary\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

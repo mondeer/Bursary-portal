@@ -32,7 +32,7 @@ Route::post('login', 'LoginCtrl@login');
 Route::post('/logout', 'LoginCtrl@logout');
 
 // constituency admin routes
-Route::get('/bursary/admin', function(){
+Route::get('/system/admin', function(){
   return view('admin.home');
 });
 
@@ -44,9 +44,15 @@ Route::get('/bursary/admin/view', function(){
 
 });
 
-// students routes
-Route::get('/bursary/student/apply', function(){
+// village rep
+Route::get('/village-rep/admin', function(){
+  return view('village_cdf.index');
+});
 
+
+// students routes
+Route::get('/student/dashboard', function(){
+  return view('students.index');
 });
 
 Route::get('/bursary/student/approved', function(){

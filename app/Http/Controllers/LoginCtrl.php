@@ -13,11 +13,11 @@ class LoginCtrl extends Controller
       if ( Sentinel::authenticate($request->all()) ) {
 
         if(Sentinel::getUser()->roles()->first()->slug == 'admin')
-          return redirect('/topclass/admin');
-        elseif (Sentinel::getUser()->roles()->first()->slug == 'freelancer')
-          return redirect('/topclass/admin');
-        elseif (Sentinel::getUser()->roles()->first()->slug == 'customer')
-          return redirect('/school/admin');
+          return redirect('/system/admin');
+        elseif (Sentinel::getUser()->roles()->first()->slug == 'village')
+          return redirect('/village-rep/admin');
+        elseif (Sentinel::getUser()->roles()->first()->slug == 'student')
+          return redirect('/student/dashboard');
 
       } else {
         return redirect()->back()->with(['error' => 'Have you forgoten your credentials?']);

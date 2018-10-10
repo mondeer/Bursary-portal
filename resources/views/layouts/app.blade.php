@@ -1,153 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
-
-    <!-- Meta Tag -->
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title></title>
+    <!-- Favicon-->
+    <link rel="icon" href="/dash/favicon.ico" type="image/x-icon">
 
-    <!-- SEO -->
-    <meta name="description" content="150 words">
-    <meta name="author" content="Mondia Kering">
-    <meta name="url" content="http://www.imond.co.ke">
-    <meta name="copyright" content="iMond Solutions">
-    <meta name="robots" content="index,follow">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-    <title>TopClass || Best Writers</title>
+    <!-- Bootstrap Core Css -->
+    <link href="/dash/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
+    <!-- Waves Effect Css -->
+    <link href="/dash/plugins/node-waves/waves.css" rel="stylesheet" />
 
-    <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/plugin.css')}}">
+    <!-- Animation Css -->
+    <link href="/dash/plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/style.css')}}">
+    <!-- Custom Css -->
+    <link href="/dash/css/style.css" rel="stylesheet">
+</head>
 
-    <!-- Google Web Fonts  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
-    <link rel="icon" href="{{url('/imond/img/imond.png')}}">
-    <script src="/blog/tinymce/tinymce.min.js"></script>
-
-    <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins: 'codesample link',
-        toolbar: 'bold, italic, underline, strikethrough, alignleft, aligncenter, alignright, alignjustify, styleselect, fontselect, fontsizeselect, bullist, numlist, outdent, indent, blockquote, subscript, superscript'
-      });
-    </script>
-
-  </head>
-
- <body>
-	 <!-- Preloader Start -->
-     <div class="preloader">
-	   <div class="rounder"></div>
-      </div>
-      <!-- Preloader End -->
-
-    <div id="main">
-        <div class="container">
-            <div class="row">
-
-                 <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
-                   <div class="about-fixed">
-
-                     <div class="my-pic">
-                       <br>
-                       <br>
-                       <br>
-                        <img width="60px" src="/assets/img/topclassbg.png" alt="">
-                        <div style="background-color: 2CC1A4;">
-                          <ul class="menu-link">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/#">View Blogs</a></li>
-                            <li><a href="/#">Contact</a></li>
-                         </ul>
-                        </div>
-                      </div>
-
-                      <div class="my-detail">
-                       <ul class="social-icon">
-                         <li><a href="http://www.facebook.com/topclass" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="http://www.twitter.com/topclass" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <!-- <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li> -->
-                         <li><a href="http://www.instagram.com/@topclass" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-
-                    </div>
-                  </div>
-                </div>
-                <!-- About Me (Left Sidebar) End -->
-
-                 <!-- Blog Post (Right Sidebar) Start -->
-                 <div class="col-md-9">
-                    <div class="col-md-12 page-body">
-                    	@yield('content')
-                        <!-- Subscribe Form Start -->
-                        <div class="col-md-8 col-md-offset-2">
-                           <form id="" action="/subscribe" method="post">
-                             {{csrf_field()}}
-          						         <div class="subscribe-form margin-top-20">
-          							           <input id="mc-email" type="email" name="email" placeholder="Email Address" class="text-input">
-          							           <button class="submit-btn" type="submit">Submit</button>
-          								     </div>
-                              <p>Subscribe to my weekly Thoughts</p>
-              								<label for="mc-email" class="mc-label"></label>
-              							  </form>
-
-                           </div>
-                           <!-- Subscribe Form End -->
-
-                         </div>
-
-                       <!-- Footer Start -->
-                       <div class="col-md-12 page-body margin-top-50 footer">
-                          <footer>
-                          <ul class="menu-link">
-                               <li><a href="/">Home</a></li>
-                               <li><a href="/topblogs">View Blogs</a></li>
-                               <li><a href="/kalyacontact">Contact</a></li>
-                            </ul>
-
-                          <p>&copy;
-                          <script>
-                              document.write(new Date().getFullYear())
-                          </script>,
-                          <a href="http://www.topclass.co.ke" target="_blank">TopClass Writers</a>.</p>
-
-						  <!-- imond Credit Start -->
-                          <div class="imond-credit">Develped by <i class="fa fa-love"></i><a href="https://imond.co.ke" target="_blank">iMond Solutions</a></div>
-                          <!-- imond Credit End -->
-                         </footer>
-                       </div>
-                       <!-- Footer End -->
-
-
-                  </div>
-                  <!-- Blog Post (Right Sidebar) End -->
-
+<body class="login-page">
+    <div class="login-box">
+        <div class="logo">
+            <a href="javascript:void(0);">Turkana <b>East</b> <br> College & University Students Association</a>
+            <small></small>
+        </div>
+        <div class="card">
+            <div class="body">
+                @yield('auth')
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
 
+    <!-- Jquery Core Js -->
+    <script src="/dash/plugins/jquery/jquery.min.js"></script>
 
+    <!-- Bootstrap Core Js -->
+    <script src="/dash/plugins/bootstrap/js/bootstrap.js"></script>
 
-    <!-- Back to Top Start -->
-    <a href="#" class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></a>
-    <!-- Back to Top End -->
+    <!-- Waves Effect Plugin Js -->
+    <script src="/dash/plugins/node-waves/waves.js"></script>
 
+    <!-- Validation Plugin Js -->
+    <script src="/dash/plugins/jquery-validation/jquery.validate.js"></script>
 
-    <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="{{ asset('blog/js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('blog/js/plugin.js')}}"></script>
+    <!-- Custom Js -->
+    <script src="/dash/js/admin.js"></script>
+    <script src="/dash/js/pages/examples/sign-in.js"></script>
+</body>
 
-    <!-- Main Javascript File  -->
-    <script type="text/javascript" src="{{ asset('blog/js/scripts.js')}}"></script>
-
-
-   </body>
- </html>
+</html>

@@ -88,37 +88,37 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	/*background: rgba(50, 130, 8, 0.5);*/
 }
 
-.fh5co-cover {
+.imond-cover {
   position: relative;
   min-height: 800px;
 }
-.fh5co-cover .fh5co-cover-text {
+.imond-cover .imond-cover-text {
   position: relative;
   z-index: 5;
 }
-.fh5co-cover .fh5co-cover-text .full-height {
+.imond-cover .imond-cover-text .full-height {
   display: table;
   min-height: 800px;
 }
-.fh5co-cover .fh5co-cover-text .full-height .fh5co-cover-intro {
+.imond-cover .imond-cover-text .full-height .imond-cover-intro {
   display: table-cell;
   vertical-align: middle;
   min-height: 800px;
 }
-.fh5co-cover .fh5co-cover-text .cover-text-lead {
+.imond-cover .imond-cover-text .cover-text-lead {
   font-size: 40px;
   font-family: "Slabo", Arial, sans-serif;
   font-weight: 700;
   color: #fff;
 }
-.fh5co-cover .fh5co-cover-text .cover-text-sublead {
+.imond-cover .imond-cover-text .cover-text-sublead {
   font-size: 16px;
   font-family: "Slabo", Arial, sans-serif;
   font-weight: 400;
   line-height: 26px;
   color: #fff;
 }
-.fh5co-cover .fh5co-cover-text .btn-outline {
+.imond-cover .imond-cover-text .btn-outline {
   border: 2px solid #fff;
   color: #fff;
   -webkit-transition: all 0.3s ease;
@@ -127,17 +127,17 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.fh5co-cover .fh5co-cover-text .btn-outline:hover {
+.imond-cover .imond-cover-text .btn-outline:hover {
   color: #fff;
   background: #1784fb;
   border-color: #1784fb;
 }
-.fh5co-cover .fh5co-cover-text .btn-outline:hover, .fh5co-cover .fh5co-cover-text .btn-outline:focus, .fh5co-cover .fh5co-cover-text .btn-outline:active {
+.imond-cover .imond-cover-text .btn-outline:hover, .imond-cover .imond-cover-text .btn-outline:focus, .imond-cover .imond-cover-text .btn-outline:active {
   outline: none;
 }
 
 /* COVER STYLE #2 */
-.fh5co-cover-style-2 {
+.imond-cover-style-2 {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -145,7 +145,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
   width: 100%;
   position: relative;
 }
-.fh5co-cover-style-2 > .fh5co-overlay {
+.imond-cover-style-2 > .imond-overlay {
   position: absolute;
   top: 0;
   bottom: 0;

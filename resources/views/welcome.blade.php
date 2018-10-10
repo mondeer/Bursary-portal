@@ -1,412 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bursary || Application Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Bursary application portal for constituencies and counties" />
+	<meta name="keywords" content="bursary application, bursary consitituency, county bursary portal" />
+	<meta name="author" content="mondia kering" />
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Topclass writers helps in doing your assignment and your project without forgeting your theses." />
-    <meta name="keywords" content="assignment, assignments, writing, best writers, freelancers, freelancing, thesis help" />
-    <meta name="author" content="Laban, iMond Solutions" />
-    <title>TopClass || Freelancers</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- CSS Files -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="/assets/css/demo.css" rel="stylesheet" />
-</head>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-<body class="index-page sidebar-collapse">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
-        <div class="container">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="/" rel="tooltip" title="Designed by TopClass. Coded by iMond" data-placement="bottom" target="_blank">
-                    <img width="150px" src="/assets/img/topclassbg.png" alt="">
-                </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/freelancers/enroll">
-                            <i class="fa fa-pencil"></i>
-                            <p>Become a Writer</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/assignment/submit" target="_blank">
-                            <i class="now-ui-icons files_paper"></i>
-                            <p>Submit Assignment</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/topclass/services">
-                            <i class="fa fa-superpowers"></i>
-                            <p>Services</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-neutral" href="{{ url('/login')}}">
-                            <i class="now-ui-icons arrows-1_share-66"></i>
-                            <p>Login</p>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none d-xl-none">Twitter</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none d-xl-none">Facebook</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none d-xl-none">Instagram</p>
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
-    <div class="wrapper">
-        <div class="page-header clear-filter" filter-color="orange">
-            <div class="fullscreen-video-wrap" data-parallax="true">
-              <video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" autoplay="" loop="">
-              </video>
-            </div>
-            <div class="header-overlay"></div>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 
-            <div class="container">
-              <div class="header-content text-md-center">
-                <!-- <h1 class="imond1">Welcome To Topclass</h1>
-                <p>We at Topclass offer all types of online academic services,
-                  be it homework help, coursework help, case study help, thesis/research
-                  paper writing help and online exam help. And for each service, each subject and each topic. </p>
-                <a class="btn1">Find Out More</a> -->
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="/assets/css/flexslider.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- Modernizr JS -->
+	<script src="/assets/js/modernizr-2.6.2.min.js"></script>
 
+	</head>
+	<body>
 
-                <div class="" data-wow-offset="0" data-wow-delay="0.1s">
-                  <h4 class="h-light imondwhite">Details of Assignment</h4>
-                </div>
-                  <div class="imond">
-                  <form class="form-horizontal" role="form" method="POST" action="/topclass/assignment">
-                      {{ csrf_field() }}
+	<nav id="imond-main-nav" role="navigation">
+		<a href="#" class="js-imond-nav-toggle imond-nav-toggle active"><i></i></a>
+		<div class="js-fullheight imond-table">
+			<div class="imond-table-cell js-fullheight">
+				<h1 class="text-center"><a class="imond-logo" href="/">Bursary</a></h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">Apply</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">Login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<p class="imond-social-icon">
+					<a href="#"><i class="icon-twitter2"></i></a>
+					<a href="#"><i class="icon-facebook2"></i></a>
+					<a href="#"><i class="icon-instagram"></i></a>
+			</div>
+		</div>
+	</nav>
 
-                      @if( session('error') )
-                          <div class="alert alert-danger">
-                            {{ session('error') }}
-                          </div>
-                      @endif
+	<div id="imond-page">
+		<header>
+			<div class="container">
+				<div class="imond-navbar-brand">
+					<div class="row">
+						<div class="col-xs-6">
+							<h1 class="text-left"><a class="imond-logo" href="/"><span>Turkana East</span> Bursary <span>Portal</span></a></h1>
+						</div>
+						<div class="col-xs-6">
+							<p class="imond-social-icon text-right">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+						</div>
+					</div>
+					<a href="#" class="js-imond-nav-toggle imond-nav-toggle"><i></i></a>
+				</div>
+			</div>
+		</header>
+		<aside id="imond-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+			   	<li style="background-image: url(/assets/images/slide_1.jpg);">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Turkana East Consitituency</span>
+			   						<h2>Bursary Application Portal</h2>
+			   						<p>All students from Turkana East Constituency have equal opportunities</p>
+			   					</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(/assets/images/slide_2.png);">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Jan. 07, 2016</span>
+				   					<h2>Be Creative, Be Good To Your Work</h2>
+				   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="name" class="col-md-4 control-label">Email</label>
+				   				</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(/assets/images/slide_3.jpg);">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Jan. 06, 2016</span>
+				   					<h2>Inspirational Website Of Year 2017</h2>
+				   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				   				</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="imond-intro-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 animate-box text-center">
+						<h2 class="intro-heading">Building Bridges to Better Education</h2>
+						<p><span>For Turkana East Students with <i class="icon-heart3"></i> by Turkana East Constituency</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                              <div class="col-md-12">
-                                  <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="palce your email address" required autofocus>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="name" class="col-md-4 control-label">Subject</label>
+		<div id="imond-featured">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="post-entry">
+						<div class="col-md-6 col-md-push-6 nopaddingbottom animate-box">
+							<div class="post-image" style="background-image: url(assets/images/featured-1.jpg);"></div>
+						</div>
+						<div class="col-md-6 col-md-pull-5 animate-box">
+							<div class="display-tc">
+								<div class="desc">
+									<span class="date">Students Accross The country</span>
+									<h3>Eligibility</h3>
+									<p>Eligiility is Turkana East Constituency students in various secondary and tertiary institutions accross the country</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                              <div class="col-md-12">
-                                  <textarea class="form-control" name="assignment" rows="4" cols="20"></textarea>
-                                  <!-- <input type="text" class="form-control" name="subject" value="{{ old('email') }}" placeholder="palce your email address" required autofocus> -->
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="name" class="control-label">Due Date</label>
+		<div class="imond-counters" style="background-image: url(assets/images/hero.jpg);" data-stellar-background-ratio="0.5" id="counter-animate">
+			<div class="imond-narrow-content animate-box">
+				<div class="row" >
+					<div class="col-md-4 text-center">
+						<span class="imond-counter js-counter" data-from="0" data-to="7520" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="imond-counter-label">Project</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<span class="imond-counter js-counter" data-from="0" data-to="5450" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="imond-counter-label">Clients</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<span class="imond-counter js-counter" data-from="0" data-to="6876" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="imond-counter-label">Satisfied Client</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="section-title">About Words</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
 
-                              <div class="col-md-12">
-                                  <input type="text" class="form-control" name="due_date" value="{{ old('due_date') }}" placeholder="mm/dd/yyyy" required autofocus>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                              <label for="name" class="control-label">Length of Assignment</label>
+						<div class="col-md-3 col-md-push-1">
+							<h3 class="section-title">Links</h3>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Work</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="#">FAQ / Contact</a></li>
+							</ul>
+						</div>
 
-                              <div class="col-md-12">
-                                  <input type="text" class="form-control" name="length_of_assignment" value="{{ old('length_of_assignment') }}" placeholder="how many words/Pages" required autofocus>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- <div class="row">
-                        <div class="col-md-4 col-md-offset-8">
-                          <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="name" class="control-label">or Upload file</label>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="assignment1">
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-
-                      <div class="form-group">
-                          <div class="col-md-6 col-md-offset-6">
-                              <button type="submit" class="btn btn-primary">
-                                  Submit
-                              </button>
-                          </div>
-                      </div>
-                  </form>
-
-                </div>
-
-              </div>
-                <h6 class="category category-absolute imondblack">Made by
-                    <a href="/">
-                        <img width="70px" src="/assets/img/topclassbg.png" class="Topclass-logo" />
-                    </a>. For you
-                </h6>
-            </div>
-        </div>
-        <div class="main">
-            <div class="section section-images">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="hero-images-container">
-                                <img src="assets/img/openbooks.png" alt="">
-                            </div>
-                            <div class="hero-images-container-1">
-                                <img src="assets/img/openbooks1.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- The main part -->
-                <div class="container">
-                  <br><br><br>
-                    <div class="row">
-                      <div class="col-md-4 text-center">
-                        <i class="fa fa-cloud-upload fa-4x"></i><br>
-                        <b>SUBMIT YOUR ASSIGNMENT</b>
-                        <p align='justify'>Simply visit myassignmenthelp.com and fill up the
-                        assignment submission form. Mention the assignment
-                        requirements and upload the files. You can immediately
-                        chat with 24 x 7 assignment expert and get the best price.</p>
-                      </div>
-                      <div class="col-md-4 text-center">
-                        <i class="fa fa-cc-paypal fa-4x"></i><br>
-                        <b>PAY FOR ASSIGNMENT</b>
-                        <p align="justify">
-                        Once you receive best price for your assignment, process
-                        the payment through- paypal,credit card, debit card or online banking.</p>
-                      </div>
-                      <div class="col-md-4 text-center">
-                        <i class="fa fa-cloud-download fa-4x"></i><br>
-                        <b>GET ASSIGNMENT SOLUTION</b>
-                        <p align="justify">
-                        Your high quality and well referenced assignment will
-                        be delivered straight in your MyAssignmenthelp.com’s
-                        student account, long before the agreed deadline.</p>
-                      </div>
-                    </div>
-                </div>
-                <!-- main part done -->
-            </div>
-
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6  text-center">
-                  <img width="400px" src="/assets/img/top2.jpg" alt="">
-                </div>
-                <div class="col-md-6 text-justify">
-                  <b>On Time Delivery</b> <br>
-                  Being the best professional writing services provider,
-                  we never compromise when it comes to deadline and delivery
-                  of assignment on time. Our writers make sure that all orders
-                  are submitted prior to the deadline so that you can proofread
-                  your paper before handing it over to your tutor.
-                   <br> <br>
-                   <b>24 X 7 Help</b> <br>
-                   We work 24x7 for your convenience. Our customer support
-                   executives are available round the clock in case you need
-                   any professional assistance. Feel free to contact our assignment
-                   writing services any time via phone, email.
-
-
-                </div>
-              </div>
-<hr>
-              <div class="row">
-                <div class="col-md-6 text-justify">
-                  <b>Services For All Subjects</b> <br>
-                  It does not matter whether you are a freshman in college
-                  or finishing your final assignment to acquire Ph.D. degree,
-                  our writers can provide you professional writing assistance
-                  on any subject at any level. We have experts for Law, Nursing,
-                  Management, Accounting, Marketing, Engineering, Programming etc.
-                  Thus, the next time you would type “where can I have a comprehensive
-                  assignment help for me?” feel free to visit us for the best result.
-                  <br><br>
-                  <b>Plagiarism-Free Work</b> <br>
-                  To avoid any plagiarism, we check our completed papers three times
-                  — after writing, editing and proofreading — using reliable plagiarism
-                  detection software, Turnitin.com. We have strict policies against plagiarism.
-                  We only provide customized 100 percent original papers.
-
-
-                </div>
-                <div class="col-md-6 text-center">
-                  <img width="400px" src="/assets/img/openbooks1.png" alt="">
-                </div>
-              </div>
-            </div>
-            <ul class="accordion">
-              <li class="tab">
-                <div class="social youtube">
-                  <a href="https://youtube.com/traversymedia" target="_blank">Youtube</a>
-                </div>
-                <div class="content">
-                  <h1>YouTube</h1>
-                  <p>Follow me on YouTube for tutorials with the latest technology in webv development</p>
-                </div>
-              </li>
-              <li class="tab">
-                <div class="social twitter">
-                  <a href="https://twitter.com/traversymedia" target="_blank">Twitter</a>
-                </div>
-                <div class="content">
-                  <h1>Twitter</h1>
-                  <p>Follow me on Twitter for video and course updates, article & blog shares and more</p>
-                </div>
-              </li>
-              <li class="tab">
-                <div class="social facebook">
-                  <a href="https://facebook.com/traversymedia" target="_blank">Facebook</a>
-                </div>
-                <div class="content">
-                  <h1>Facebook</h1>
-                  <p>Follow me on Facebook to stay up to date with Traversy Media and get notified of new videos, publications, etc</p>
-                </div>
-              </li>
-              <li class="tab">
-                <div class="social linkedin">
-                  <a href="https://www.linkedin.com/in/bradtraversy" target="_blank">LinkedIn</a>
-                </div>
-                <div class="content">
-                  <h1>LinkedIn</h1>
-                  <p>Connect with me on a professional level on Linkedin</p>
-                </div>
-              </li>
-              <li class="tab">
-                <div class="social instagram">
-                  <a href="http://instagram.com/traversymedia" target="_blank">Instagram</a>
-                </div>
-                <div class="content">
-                  <h1>Instagram</h1>
-                  <p>Follow me on Instragram for a more personal look into my life and work</p>
-                </div>
-              </li>
-              <li class="tab">
-                <div class="social github">
-                  <a href="http://github.com/bradtraversy" target="_blank">Github</a>
-                </div>
-                <div class="content">
-                  <h1>Github</h1>
-                  <p>Check out my Github for tutorial code, my personal projects and more</p>
-                </div>
-              </li>
-            </ul>
-        </div>
-
-        <!-- <div class="container">
-
-
-        </div> -->
-
-        <footer class="footer" data-background-color="black">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Submit Assignment
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Become a Freelancer
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                MIT License
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
+						<div class="col-md-3">
+							<h3 class="section-title">Information</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="section-title">Newsletter</h3>
+							<p>Subscribe for our newsletter</p>
+							<form class="form-inline" id="imond-header-subscribe" action="/subscribe" method="post">
+								{{ csrf_field() }}
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+											<input type="text" name="email" class="form-control" id="email" placeholder="Enter your email">
+											<button type="submit" class="btn btn-default"><i class="icon-paper-plane"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="imond-social-icon">
+								<a href="https://www.twitter.com/mondeer" target="_blank"><i class="icon-twitter2"></i></a>
+								<a href="https://www.facebook.com/bassaniok" target="_blank"><i class="icon-facebook2"></i></a>
+								<a href="https://www.github.com/mondeer" target="_blank"><i class="icon-github"></i></a>
+								<a href="https://www.youtube.com/channel/UCk9bz4nDUaG5Va1_9O-p5wg" target="_blank"><i class="icon-youtube"></i></a>
+							</p>
+							<div class="copyright">
                     &copy;
                     <script>
                         document.write(new Date().getFullYear())
-                    </script>, Designed & Coded by
+                    </script>, Turkana East Constituency <br> Designed & Coded By
                     <a href="http://www.imond.co.ke" target="_blank">iMond Solutions</a>.
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
-<!--   Core JS Files   -->
-<script src="/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="/assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="/assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
-    });
+							</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-    function scrollToDownload() {
+	</div>
 
-        if ($('.section-download').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
-            }, 1000);
-        }
-    }
-</script>
+	<!-- jQuery -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/assets/js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="/assets/js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
 
+	<!-- Main JS (Do not remove) -->
+	<script src="/assets/js/main.js"></script>
+
+	</body>
 </html>

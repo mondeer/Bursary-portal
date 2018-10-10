@@ -20,19 +20,19 @@ class RegisterCtrl extends Controller
     ]);
 
     $admin = Sentinel::findRoleBySlug('admin');
-    $freelancer = Sentinel::findRoleBySlug('freelancer');
-    $customer = Sentinel::findRoleBySlug('customer');
+    $village = Sentinel::findRoleBySlug('village');
+    $student = Sentinel::findRoleBySlug('student');
 
     $role = $request->input('role');
 
     if($role =='admin'){
       $admin->users()->attach($user);
     }
-    elseif($request->input('role')=='freelancer'){
-      $freelancer->users()->attach($user);
+    elseif($request->input('role')=='village'){
+      $village->users()->attach($user);
     }
-    elseif($request->input('role')=='customer'){
-      $customer->users()->attach($user);
+    elseif($request->input('role')=='student'){
+      $student->users()->attach($user);
     }
 
     return redirect('/login');

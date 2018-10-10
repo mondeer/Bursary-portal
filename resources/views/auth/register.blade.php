@@ -21,6 +21,17 @@
         </div>
     </div>
     <div class="input-group">
+      <span>
+        Role
+      </span>
+      <div class="form-line">
+        <select class="form-control" name="role">
+          <option value="student">TECUSA Member</option>
+          <option value="village">Village CDF Rep</option>
+        </select>
+      </div>
+    </div>
+    <div class="input-group">
         <span class="input-group-addon">
             <i class="material-icons">email</i>
         </span>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <title>Turkana East || College & University Students Association</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -93,7 +93,7 @@
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Sentinel::getUser()->first_name }}</div>
-                    <div class="email">Constituency CDF Manager</div>
+                    <div class="email">Village CDF Representative</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -128,17 +128,35 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">widgets</i>
-                            <span>Bursary Applications</span>
+                            <i class="material-icons"> <img src="/dash/images/tecusa.png" width="30"> </i>
+                            <span>TECUSA</span>
                         </a>
                         <ul class="ml-menu">
                           <li>
-                              <a href="/bursary/admin/view">Applications</a>
+                              <a href="/student/tecusa/profile">View Membership Status</a>
                           </li>
                           <li>
-                              <a href="/bursary/admin/beneficiaries">Beneficiaries</a>
+                              <a href="/student/tecusa/profile">View Profile</a>
+                          </li>
+                          <li>
+                              <a href="#">Renew Membership</a>
                           </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>My Applications</span>
+                        </a>
+                        <ul class="ml-menu">
+                          <li>
+                              <a href="/village/admin/view">New Bursary Application</a>
+                          </li>
+                          <li>
+                              <a href="/village/admin/beneficiaries">Disbursements</a>
+                          </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- #Menu -->
@@ -164,47 +182,7 @@
 
     @yield('content')
 
-    <!-- Jquery Core Js -->
-    <script src="/dash/plugins/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core Js -->
-    <script src="/dash/plugins/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="/dash/plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="/dash/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="/dash/plugins/node-waves/waves.js"></script>
-
-    <!-- Jquery CountTo Plugin Js -->
-    <script src="/dash/plugins/jquery-countto/jquery.countTo.js"></script>
-
-    <!-- Morris Plugin Js -->
-    <script src="/dash/plugins/raphael/raphael.min.js"></script>
-    <script src="/dash/plugins/morrisjs/morris.js"></script>
-
-    <!-- ChartJs -->
-    <script src="/dash/plugins/chartjs/Chart.bundle.js"></script>
-
-    <!-- Flot Charts Plugin Js -->
-    <script src="/dash/plugins/flot-charts/jquery.flot.js"></script>
-    <script src="/dash/plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="/dash/plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="/dash/plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="/dash/plugins/flot-charts/jquery.flot.time.js"></script>
-
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="/dash/plugins/jquery-sparkline/jquery.sparkline.js"></script>
-
-    <!-- Custom Js -->
-    <script src="/dash/js/admin.js"></script>
-    <script src="/dash/js/pages/index.js"></script>
-
-    <!-- Demo Js -->
-    <script src="/dash/js/demo.js"></script>
+    @stack('scripts')
 </body>
 
 </html>

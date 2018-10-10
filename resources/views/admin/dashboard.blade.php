@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <title>Turkana East || College & University Students Association</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -89,7 +89,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="/dash/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Sentinel::getUser()->first_name }}</div>
@@ -121,11 +121,43 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="pages/helper-classes.html">
+                        <a href="#">
                             <i class="material-icons">layers</i>
                             <span>Open Applications</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons"><img src="/dash/images/tecusa.png" width="30"></i>
+                            <span>TECUSA</span>
+                        </a>
+                        <ul class="ml-menu">
+                          <li>
+                              <a href="#">
+                                <i class="material-icons">group_add</i>
+                                <span>
+                                  New Subscriptions
+                                </span>
+                              </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="material-icons">remove_red_eye</i>
+                              <span>
+                                View Members
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="material-icons">delete</i>
+                              <span>
+                                Deregister Member
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
@@ -139,6 +171,13 @@
                               <a href="/bursary/admin/beneficiaries">Beneficiaries</a>
                           </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">settings_input_antenna</i>
+                            <span>Communications</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!-- #Menu -->

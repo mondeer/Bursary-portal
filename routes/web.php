@@ -55,6 +55,6 @@ Route::get('/student/dashboard', function(){
   return view('students.index');
 });
 
-Route::get('/bursary/student/approved', function(){
-
+Route::get('/student/tecusa/profile', function(){
+  return view('students.tecusa.profile');
 });

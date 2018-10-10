@@ -155,10 +155,16 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+                  <p>&copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>,
+                    Turkana East Constituency <br>
+                    <a href="http://www.imond.co.ke" target="_blank">By iMond Solutions</a>. <b>Version: </b> 1.0.5
+                  </p>
                 </div>
                 <div class="version">
-                    <b>Version: </b> 1.0.5
+
                 </div>
             </div>
             <!-- #Footer -->
